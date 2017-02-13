@@ -1,6 +1,6 @@
 ---
 title: My Resume
-timezone: UTC
+timezone: America/New_York
 collections:
   posts:
     title: Posts
@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-url: http://webjeda.com
+url: http://ericslin.com
 baseurl: "/online-cv"
 name: Alan Doe
 tagline: Full Stack Developer
