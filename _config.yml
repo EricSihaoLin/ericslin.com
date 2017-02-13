@@ -10,12 +10,11 @@ collections:
     output: true
 url: http://ericslin.com
 baseurl: ''
-name: Alan Doe
-tagline: Full Stack Developer
+name: Eric Sihao Lin
+tagline: Currently coding as a hobby
 pic: profile.png
-email: hello@webjeda.com
-phone: 012 345 6789
-website: blog.webjeda.com
-linkedin: alandoe
-github: sharu725
-twitter: "@webjeda"
+email: eric.lin@nyu.edu
+website: ericslin.com
+linkedin: ericsihaolin
+github: mainlandhero
+twitter: "@ericslin"
