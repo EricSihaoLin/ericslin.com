@@ -1,5 +1,5 @@
 ---
-title: All About Me
+title: Just a Thought
 timezone: America/New_York
 collections:
   posts:
@@ -8,13 +8,123 @@ collections:
   uploads:
     title: Uploads
     output: true
-url: http://ericslin.com
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    comments: true
+    social-share: true
+- scope:
+    path: ''
+  values:
+    layout: page
+    show-avatar: true
+url: http://mainlandhero.github.io
 baseurl: 
-name: Eric Sihao Lin
-tagline: Currently coding as a hobby
-pic: profile.jpg
-email: eric.lin@nyu.edu
-website: ericslin.com
-linkedin: ericsihaolin
-github: mainlandhero
-twitter: "@ericslin"
+description: A virtual proof that name is awesome!
+navbar-links:
+  About Me: aboutme
+  Resources:
+  - GitHub Pages: https://pages.github.com/
+avatar: "/img/avatar-icon.png"
+author:
+  name: Eric Sihao Lin
+  email: eric.lin@nyu.edu
+  facebook: EricSihaoLin
+  github: MainlandHero
+  twitter: ericslin
+  linkedin: ericsihaolin
+footer-links-active:
+  rss: false
+  facebook: true
+  email: true
+  twitter: true
+  google-plus: false
+  github: true
+  reddit: false
+  linkedin: true
+  xing: false
+  stackoverflow: false
+  snapchat: false
+  instagram: false
+  youtube: false
+  spotify: false
+  telephone: false
+share-links-active:
+  twitter: true
+  facebook: true
+  google: false
+  linkedin: true
+url-pretty: EricSLin.com
+excerpt_length: 50
+title-separator: "-"
+markdown: kramdown
+highlighter: rouge
+permalink: "/:year-:month-:day-:title/"
+paginate: 5
+kramdown:
+  input: GFM
+link-tags: false
+exclude:
+- CHANGELOG.md
+- CNAME
+- Dockerfile
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- Vagrantfile
+prose:
+  rooturl: _posts
+  media: img
+  ignore:
+  - 404.html
+  - LICENSE
+  - feed.xml
+  - _config.yml
+  - "/_layouts"
+  - "/_includes"
+  - "/css"
+  - "/img"
+  - "/js"
+  metadata:
+    _posts:
+    - name: layout
+      field:
+        element: hidden
+        value: post
+    - name: title
+      field:
+        element: text
+        label: Post title
+        placeholder: Title
+        alterable: true
+    - name: subtitle
+      field:
+        element: textarea
+        label: Subtitle
+        placeholder: A description of your post.
+        alterable: true
+    - name: date
+      field:
+        element: text
+        label: Date
+        help: Enter date of post.
+        placeholder: yyyy-mm-dd
+        alterable: true
+    - name: image
+      field:
+        element: text
+        label: Image
+        help: Add a thumbnail image to your post.
+        placeholder: Thumbnail
+        alterable: true
+    - name: published
+      field:
+        element: checkbox
+        label: Publish
+        help: Check to publish post, uncheck to hide.
+gems:
+- jekyll-paginate
